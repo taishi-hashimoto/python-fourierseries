@@ -34,7 +34,7 @@ fig.tight_layout()
 
 def update(i):
     line.set_data([x, yy[i]])
-    ax.set_title(f"$n = {n[i]}$")
+    ax.set_title(f"$k = {n[i]}$")
 
 ani = anim.FuncAnimation(fig, update, len(n), interval=1000, repeat=True)
 shape = "square" if func == square_wave else "tri"
